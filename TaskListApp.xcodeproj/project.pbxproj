@@ -10,10 +10,11 @@
 		DA32730C2935428300407AC3 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DA32730B2935428300407AC3 /* Realm */; };
 		DA32730E2935428300407AC3 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA32730D2935428300407AC3 /* RealmSwift */; };
 		DA3273132935441E00407AC3 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3273122935441E00407AC3 /* TasksViewController.swift */; };
-		DA3273152935448000407AC3 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3273142935448000407AC3 /* AlertController.swift */; };
+		DA3273152935448000407AC3 /* Extension + AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3273142935448000407AC3 /* Extension + AlertController.swift */; };
 		DA327318293544A400407AC3 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA327317293544A400407AC3 /* TaskList.swift */; };
 		DA32731B293544C900407AC3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32731A293544C900407AC3 /* DataManager.swift */; };
 		DA32731D293544DD00407AC3 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32731C293544DD00407AC3 /* StorageManager.swift */; };
+		DA3273202935502C00407AC3 /* Extension + UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32731F2935502C00407AC3 /* Extension + UITableViewCell.swift */; };
 		DA8B39C529353E17003A7967 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B39C429353E17003A7967 /* AppDelegate.swift */; };
 		DA8B39C729353E17003A7967 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B39C629353E17003A7967 /* SceneDelegate.swift */; };
 		DA8B39C929353E17003A7967 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B39C829353E17003A7967 /* TaskListViewController.swift */; };
@@ -24,10 +25,11 @@
 
 /* Begin PBXFileReference section */
 		DA3273122935441E00407AC3 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
-		DA3273142935448000407AC3 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		DA3273142935448000407AC3 /* Extension + AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + AlertController.swift"; sourceTree = "<group>"; };
 		DA327317293544A400407AC3 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		DA32731A293544C900407AC3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		DA32731C293544DD00407AC3 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		DA32731F2935502C00407AC3 /* Extension + UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UITableViewCell.swift"; sourceTree = "<group>"; };
 		DA8B39C129353E17003A7967 /* TaskListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B39C429353E17003A7967 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8B39C629353E17003A7967 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +68,6 @@
 			children = (
 				DA8B39C829353E17003A7967 /* TaskListViewController.swift */,
 				DA3273122935441E00407AC3 /* TasksViewController.swift */,
-				DA3273142935448000407AC3 /* AlertController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -105,6 +106,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		DA32731E29354FD000407AC3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA3273142935448000407AC3 /* Extension + AlertController.swift */,
+				DA32731F2935502C00407AC3 /* Extension + UITableViewCell.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DA8B39B829353E17003A7967 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +134,7 @@
 		DA8B39C329353E17003A7967 /* TaskListApp */ = {
 			isa = PBXGroup;
 			children = (
+				DA32731E29354FD000407AC3 /* Extensions */,
 				DA327319293544B300407AC3 /* Services */,
 				DA3273162935449300407AC3 /* Models */,
 				DA3273092935400400407AC3 /* App */,
@@ -214,10 +225,11 @@
 			files = (
 				DA327318293544A400407AC3 /* TaskList.swift in Sources */,
 				DA8B39C929353E17003A7967 /* TaskListViewController.swift in Sources */,
-				DA3273152935448000407AC3 /* AlertController.swift in Sources */,
+				DA3273152935448000407AC3 /* Extension + AlertController.swift in Sources */,
 				DA32731B293544C900407AC3 /* DataManager.swift in Sources */,
 				DA3273132935441E00407AC3 /* TasksViewController.swift in Sources */,
 				DA8B39C529353E17003A7967 /* AppDelegate.swift in Sources */,
+				DA3273202935502C00407AC3 /* Extension + UITableViewCell.swift in Sources */,
 				DA8B39C729353E17003A7967 /* SceneDelegate.swift in Sources */,
 				DA32731D293544DD00407AC3 /* StorageManager.swift in Sources */,
 			);
