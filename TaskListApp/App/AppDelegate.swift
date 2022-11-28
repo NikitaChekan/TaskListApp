@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  TaskListApp
 //
-//  Created by jopootrivatel on 28.11.2022.
+//  Created by Nikita Chekan on 28.11.2022.
 //
 
 import UIKit
