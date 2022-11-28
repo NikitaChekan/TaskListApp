@@ -57,6 +57,25 @@ class StorageManager {
         }
     }
     
+    func delete(_ task: Task) {
+        write {
+            realm.delete(task)
+        }
+    }
+    
+    func rename(_ task: Task, to name: String, withNote note: String) {
+        write {
+            task.name = name
+            task.note = note
+        }
+    }
+    
+    func done(_ task: Task) {
+        write {
+            task.isComplete.toggle()
+        }
+    }
+    
     private func write(completion: () -> Void) { /// Оборачиваем метод !try фреймворка чтобы было меньше кода
         do {
             try realm.write {
