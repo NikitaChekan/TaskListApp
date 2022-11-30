@@ -40,6 +40,7 @@ class DataManager {
         
         DispatchQueue.main.async { /// Меняем поток с главного на параллельный
             StorageManager.shared.save([shoppingList, moviesList]) /// Добавляем эти данные в БД
+            UserDefaults.standard.set(true, forKey: "done")
             completion() /// применяем для обновления интерфейса ReloadData
         }
     }
